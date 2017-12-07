@@ -6,9 +6,7 @@ git clone https://github.com/vinodhalaharvi/wordpress.git
 ```
 
 ### Read the Makefile first.
-These instructions are for Mac OS x only. But you can change these to whatever else you happen to be running.
-
-Incase you don't have kubectl installed
+These instructions are for Mac OS x only. But you can change these to whatever else you happen to be running. If gcloud is not installed then install if first. [https://cloud.google.com/sdk/downloads]. Incase you don't have kubectl installed, run installs.
 ```
 make installs
 ```
@@ -28,7 +26,7 @@ Now create volumes for persistance
 make volumes
 ```
 
-Set a password for mysql by editing YOURPASSWORD to the password you want in Makefile and then run 
+Set a password for mysql by editing YOUR_PASSWORD to the password you want in Makefile and then run 
 ```
 make mysql_password
 ```
