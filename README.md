@@ -41,6 +41,14 @@ Create wordpress pod and expose it using a service.
 make wordpress
 ```
 
+You can see the external ip of you site using command below. Just connect to the external IP on port 80. You can additionally add a DNS entry if you happen to own a domain, like this one (cloudhacks.io). Happy blogging!
+```
+kubectl get services
+```
+
+
+
+
 ONLY if you want to get rid of this site. Carefull!
 ```
 make delete_all
